@@ -103,9 +103,16 @@ body {
 /* sections */
 /* general section styles */
 .firstsection,
-.secondsection,
+.secondsection {
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in;
+}
 .thirdsection {
-    height: 515px;
+    height: 800px;
     color: white;
     display: flex;
     align-items: center;
@@ -134,10 +141,51 @@ body {
     margin-bottom: 15px;
     animation: slideUp 1s ease-in-out;
 }
-.text-small {
+.intro-text {
     font-size: 18px;
     color: white;
     line-height: 1.6;
+}
+.THC-header {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 12px;
+    animation: slideUp 1s ease-in-out;
+}
+.THC {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    width: 60%;
+    float: left;
+}
+.salinity {
+    padding: 5px;
+    width: 40%;
+    height: 300px;
+    float: right;
+}
+.atm-header {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 12px;
+    animation: slideUp 1s ease-in-out;
+    margin-top: 10px;
+}
+.atm {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    width: 60%;
+    float: right;
+}
+.atmosphere {
+    padding: 5px;
+    width: 40%;
+    height: 300px;
+    float: left;
 }
 .text-footer {
     text-align: center;
