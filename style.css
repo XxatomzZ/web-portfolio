@@ -109,7 +109,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 1s ease-in;
 }
 .thirdsection {
     height: 800px;
@@ -117,7 +117,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 1s ease-in;
+    background: lightblue;
 }
 /* individual section backgrounds */
 .firstsection {
@@ -125,9 +126,6 @@ body {
 }
 .secondsection {
     background: lightskyblue;
-}
-.thirdsection {
-    background: lightblue;
 }
 /* content inside sections */
 .box-main {

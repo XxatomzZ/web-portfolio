@@ -1,0 +1,28 @@
+.projects {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: lightblue;
+}
+.THC-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+.atm-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b7cfd8;
+}
+
