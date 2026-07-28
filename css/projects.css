@@ -8,7 +8,7 @@
     background: lightblue;
 }
 .THC-project {
-    height: 1200px;
+    height: 1700px;
     color: white;
     display: flex;
     align-items: center;
@@ -16,6 +16,42 @@
     animation: fadeIn 1s ease-in;
     background: #b4d3de;
 }
+
+.stommel {
+    padding: 5px;
+    width: 40%;
+    height: 250px;
+    float: right;
+}
+
+.salinity {
+    padding: 5px;
+    width: 40%;
+    height: 250px;
+    float: left;
+}
+
+.circulation {
+    padding: 5px;
+    width: 40%;
+    height: 250px;
+    float: right;
+}
+
+.eu-temp {
+    padding: 5px;
+    width: 40%;
+    height: 250px;
+    float: left;
+}
+
+.eu-circ {
+    padding: 5px;
+    width: 40%;
+    height: 250px;
+    float: right;
+}
+
 .atm-project {
     height: 800px;
     color: white;
