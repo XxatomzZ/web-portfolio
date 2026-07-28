@@ -8,7 +8,7 @@
     background: lightblue;
 }
 .THC-project {
-    height: 800px;
+    height: 1200px;
     color: white;
     display: flex;
     align-items: center;
@@ -26,3 +26,92 @@
     background: #b7cfd8;
 }
 
+.orb-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+
+.nasa-data-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b7cfd8;
+}
+
+.gbm-project {
+    height: 1200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+
+.weather-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b7cfd8;
+}
+
+.portfolio-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+
+.codility-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b7cfd8;
+}
+
+.dm-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+
+.vortex-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b7cfd8;
+}
+
+.codedex-project {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
