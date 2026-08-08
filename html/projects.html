@@ -6,11 +6,11 @@
   <title>PROJECTS</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../css/projects.css">
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </head>
 
 <body>
-  <nav class="navbar background">
+  <nav id="navbar">
     <!-- add links to other pages in site navigation bar -->
     <ul class="nav-list">
       <li><a href="../index.html">Home</a></li>
@@ -24,7 +24,8 @@
     </div>
   </nav>
 
-  <section class="projects" id="projects-header">
+
+  <section class="projects-page" id="projects-header">
         <div class="box-main">
             <div class="firstHalf">
                 <h1 class="text-big">Projects
@@ -33,348 +34,87 @@
         </div>
   </section>
 
-  <section class="THC-project" id="THC-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Thermohaline Circulation Dissertation
-                </h1>
-                <p class="intro-text">
-                    <img src="../images/stommel.png" class="stommel">
-                    During my final year at university, I had to select a topic to 
-                    study for my dissertation. As someone who is passionate about 
-                    climate change and sustainable practices, I wanted to complete 
-                    my own study on the effects of climate change. I decided to assess 
-                    how the circulation of our oceans could be affected under various 
-                    levels of freshwater release – and relate this volume of water to a 
-                    global temperature increase. This would allow me to see how disrupted 
-                    circulation patterns could become as our planet heats up, and I could 
-                    compare this with current temperature trends to estimate how long 
-                    until we can expect this level of disruption. 
-                    <br><br>
-                    <img src="../images/salinity.png" class="salinity">
-                    I began the project by studying Stommel’s simple two-box model 
-                    (LINK???? OR IMAGE), which models the circulation between a cold, 
-                    fresh box representing polar water, and a warm, salty box representing 
-                    equatorial water. After deriving core equations for the behaviour of my 
-                    variables I expanded to an N-box model, so I could fit as many separate 
-                    ‘boxes’ of water between the pole and equator allowing for a higher 
-                    resolution and more detailed results. I tested this model using 
-                    current-day ocean data and produced outputs within an acceptable range 
-                    of uncertainty.
-                    <br><br>
-                    <img src="../images/circulation.png" class="circulation">
-                    Once I had validated my model I could begin to conduct my experiments. 
-                    I tested changes to circulation patterns under various volumes of freshwater 
-                    release, assessing the change to circulation strengths and direction before 
-                    drawing conclusions and discussing limitations of my model. One of these 
-                    limitations was the level of detail and so I moved to a 2-dimensional model, 
-                    including depth in my calculations. Once I had determined my 2D equations and 
-                    their solutions, I could run my model using parameters estimated using 
-                    real-world ocean data. This produced results representative of observed 
-                    circulation and temperature/salinity patterns, validating my model. This 
-                    allowed me to again experiment with various levels of freshwater release, 
-                    producing results adjacent with my 1D simulations, and observing the true 
-                    impact of climate change on our oceans. 
-                    <br><br>
-                    <br><br>
-                </p>
-                <h1 class="text-small">
-                    Dissertation Extension
-                </h1>
-                <p class="intro-text">
-                    <br><br>
-                    <img src="../images/europa-temp.png" class="eu-temp">
-                    Once I had completed my study on Earth’s oceans, I decided to apply my model 
-                    to other ocean systems – looking at subsurface oceans on the icy moons of 
-                    Europa and Enceladus. This is a topic of active research, and as someone with 
-                    a passion for studying space I wanted to contribute my own research. By 
-                    adjusting initial conditions and parameters, I was able to produce plots of 
-                    the behaviour of these subsurface oceans consistent with data from NASA and 
-                    models developed by the likes of Lobo and Soderund.
-                    <br><br>
-                    <br><br>
-                    <img src="../images/europa-circ.png" class="eu-circ">
-                    In the future I wish to develop my model using new data from future NASA 
-                    missions and extend this study to other celestial bodies. I may also look to 
-                    apply my model to other studies including renewable energy (wind and wave 
-                    power) and species migration.
-                </p>
-            </div>
-        </div>
+  <section class="project">
+    <img src="../images/cover-images/ocean.jpg" alt="THC-cover">
+
+    <button class="project-title">
+        Thermohaline Circulation
+    </button>
   </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Thermohaline Circulation</h2>
+        <p>
+            During my final year at university, I had to select a topic to 
+            study for my dissertation. As someone who is passionate about 
+            climate change and sustainable practices, I wanted to complete 
+            my own study on the effects of climate change. I decided to assess 
+            how the circulation of our oceans could be affected under various 
+            levels of freshwater release - and relate this volume of water to a 
+            global temperature increase. This would allow me to see how disrupted 
+            circulation patterns could become as our planet heats up, and I could 
+            compare this with current temperature trends to estimate how long 
+            until we can expect this level of disruption. 
+            <br><br>
+            I began the project by studying Stommel's simple two-box model 
+            (LINK???? OR IMAGE), which models the circulation between a cold, 
+            fresh box representing polar water, and a warm, salty box representing 
+            equatorial water. After deriving core equations for the behaviour of my 
+            variables I expanded to an N-box model, so I could fit as many separate 
+            'boxes' of water between the pole and equator allowing for a higher 
+            resolution and more detailed results. I tested this model using 
+            current-day ocean data and produced outputs within an acceptable range 
+            of uncertainty.
+            <br><br>
+            Once I had validated my model I could begin to conduct my experiments. 
+            I tested changes to circulation patterns under various volumes of freshwater 
+            release, assessing the change to circulation strengths and direction before 
+            drawing conclusions and discussing limitations of my model. One of these 
+            limitations was the level of detail and so I moved to a 2-dimensional model, 
+            including depth in my calculations. Once I had determined my 2D equations and 
+            their solutions, I could run my model using parameters estimated using 
+            real-world ocean data. This produced results representative of observed 
+            circulation and temperature/salinity patterns, validating my model. This 
+            allowed me to again experiment with various levels of freshwater release, 
+            producing results adjacent with my 1D simulations, and observing the true 
+            impact of climate change on our oceans. 
+        </p>
+    </div>
+    <div class="project-image">
+        <img src="../images/project-images/circulation.png" alt="Thermohaline Circulation Plot">
+    </div>
+  </div>
 
 
-  <section class="atm-project" id="atm-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Atmospheric Circulation Analysis
-                </h1>
-                <p class="intro-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
-                    In id cursus mi pretium tellus duis convallis. Tempus leo 
-                    eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
-                    lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
-                    lacinia integer nunc posuere. Ut hendrerit semper vel class 
-                    aptent taciti sociosqu. Ad litora torquent per conubia nostra 
-                    inceptos himenaeos.
-                </p>
-            </div>
-        </div>
-  </section>
+    <section class="project">
+    <img src="../images/cover-images/jupiter.avif" alt="orb-cover">
 
-  <section class="orb-project" id="orb-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Orbital Mechanics Simulator
-                </h1>
-                <p class="intro-text">
-                    I have recently developed a Python programme to simulate motion of orbiting 
-                    bodies. It produces plots of various orbits within our solar system using 
-                    the equation:
-                    <br><br>
-                    The code allows a user to input a body of their choosing and produces an 
-                    accurate plot of its orbit using data sourced from NASA’s horizon system. I 
-                    have added varying colours and orbit times for each body, but plan to add 
-                    more detail in future. I want to allow a user to simulate orbits of various 
-                    satellites, including an option to add a fully customised orbit. I may also 
-                    add more bodies including some exoplanets and other systems outside of our 
-                    solar system. My next task is to add an option to produce multiple orbits on 
-                    one plot and add customisable plotting options. I may also look at 
-                    implementing more detailed three-body interactions. 
-                </p>
-            </div>
-        </div>
+    <button class="project-title">
+        Orbital Mechanics
+    </button>
   </section>
+  <div class="project-info">
+    <h2>Orbital Mechanics</h2>
+    <p>
+        ............
+    </p>
+  </div>
 
-  <section class="nasa-data-project" id="nasa-data-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Mission Data Analysis
-                </h1>
-                <p class="intro-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
-                    In id cursus mi pretium tellus duis convallis. Tempus leo 
-                    eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
-                    lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
-                    lacinia integer nunc posuere. Ut hendrerit semper vel class 
-                    aptent taciti sociosqu. Ad litora torquent per conubia nostra 
-                    inceptos himenaeos.
-                </p>
-            </div>
-        </div>
-  </section>
 
-  <section class="gbm-project" id="gbm-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Stock Market Analysis (Geometric Brownian Motion)
-                </h1>
-                <p class="intro-text">
-                    In early 2026 I decided to complete a detailed study of the stock market, an 
-                    idea fuelled by my passion for finance. I wanted to begin by revising the 
-                    mathematics of random walks and Brownian motion - topics I had studied at 
-                    degree level – to model asset prices, before applying some financial ideologies 
-                    to produce useful outputs. 
-                    <br><br>
-                    First, I simulated the paths of N random walks over n steps, calculating their 
-                    mean and variance to be compared to results from theory. A plot of the paths 
-                    over time and a histogram of their final positions are useful visualisation 
-                    tools to ensure my model works smoothly. I then produced a new script to 
-                    simulate Brownian motion of N paths, before validating the model by analysing 
-                    outputs. Again, I produced a plot of a sample of paths, a histogram of final 
-                    values, and calculations of mean and variance. Additional sanity checks included 
-                    a check for independence of variables and a check of incremental mean and variance 
-                    to ensure the increments satisfy Brownian motion. 
-                    <br><br>
-                    I then modelled asset prices using Geometric Brownian motion, a more realistic 
-                    pricing model. GBM is more useful here as prices will always remain positive 
-                    and changes to the price of an asset are proportional to its current price – 
-                    providing more accurate risk and return assessments. For my model I built paths 
-                    following GBM simulated over n time-steps. Again, the model is validated with 
-                    path plots and a histogram – this time plotting the log of the final positions 
-                    to allow for comparison to a standard Normal distribution. Additional validation 
-                    comes through the comparison of the models mean and variance to their analytical 
-                    ‘expected’ values.
-                    <br><br>
-                    Next, I looked to apply this model to some real assets such as European options. 
-                    European options give the owner a right to buy or sell stock at a fixed price, 
-                    however only on the expiration date of the contract. There are two main types: a 
-                    put option gives an owner the right to sell at a fixed price, whilst a call option 
-                    gives them the right to buy at a fixed price. The model provides suggested prices 
-                    for a call and put option for a strike price, providing a confidence interval and 
-                    a visual representation in the form of a histogram, with calculations computed using 
-                    a Monte-Carlo pricing scheme. 
-                    <br><br>
-                    Finally, I wanted to produce some more meaningful investment indicators and so used 
-                    the model to calculate various ‘Greeks’ – used to measure how the price of a derivative 
-                    changes when the model inputs are changed. Here the programme provides the user with the 
-                    following Greeks: Delta (sensitivity to changes in spot price), Gamma (curvature of option 
-                    price w.r.t spot), Vega (sensitivity to volatility), Theta (sensitivity to time maturity) 
-                    and Rho (sensitivity to risk-free interest rate). 
-                    <br><br>
-                    This project helped fuel my education on financial topics and modelling of prices and 
-                    options – whilst producing useful tools that I can use in the future. In future I wish 
-                    to develop the model’s accuracy further by implementing stochastic volatility models and 
-                    various path-dependent options, whilst I could also add more Greeks to further add to the 
-                    user’s arsenal when making investment decisions. 
-                </p>
-            </div>
-        </div>
-  </section>
+    <section class="project">
+    <img src="../images/cover-images/vortex.jpg" alt="vortice-cover">
 
-  <section class="weather-project" id="weather-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Weather Data App
-                </h1>
-                <p class="intro-text">
-                    Last year I was approached with an issue faced by a UK water company - they had 
-                    several remote sites, many of which provided inaccurate or limited weather data. 
-                    This is damaging to the company as they need accurate weather predictions 
-                    whenever they wish to conduct work or training sessions on site. They need data 
-                    to help decide when to complete repairs such as cement laying and work on underground 
-                    cables/pipes, and since they regularly host training exercises for military and 
-                    police teams’ accurate data is crucial. A resolution could save a lot of money 
-                    for the water company and their collaborators. 
-                    <br><br>
-                    As a solution, I came up with the idea to build them a website which takes data from 
-                    multiple sources and compiles it to produce an accurate catalogue of past weather data. 
-                    Using this I was able to produce more reliable data for up to 20 years in the past in some 
-                    postcodes. The app is easy to use and requires a user to simply input a UK postcode to 
-                    produce an output. The output is visualised in four tabs, the first two showing data for 
-                    variables such as temperature and precipitation in the form of charts and tables. The third 
-                    tab contains plots showing the change in monthly averages across the years for which data is 
-                    available, allowing a user to look at specific months and variables individually. The final 
-                    tab provides a prediction for the future. This data is produced using a machine learning model, 
-                    which takes past data and generates a prediction and error range for weather patterns in the 
-                    future. 
-                </p>
-            </div>
-        </div>
+    <button class="project-title">
+        Vortices
+    </button>
   </section>
-
-  <section class="portfolio-project" id="portfolio-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Personal Portfolio Website
-                </h1>
-                <p class="intro-text">
-                    As I worked on more projects, I found that I wanted a place to showcase my work. 
-                    As a solution, I decided to build my own website portfolio containing details of my 
-                    achievements. I built the site using HTML, CSS and JavaScript, and started by 
-                    constructing an initial site layout and colour scheme. After designing a homepage, 
-                    I continued this aesthetic throughout the additional pages and linked it all together 
-                    using a navigation bar. All these elements were styled using CSS, giving my site a 
-                    clean look. I completed the project by typing up content – discussing my projects and 
-                    skillsets – adding images, links and interactive PDF files to showcase my work. 
-                </p>
-            </div>
-        </div>
-  </section>
-
-  <section class="codility-project" id="codility-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Codility Projects
-                </h1>
-                <p class="intro-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
-                    In id cursus mi pretium tellus duis convallis. Tempus leo 
-                    eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
-                    lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
-                    lacinia integer nunc posuere. Ut hendrerit semper vel class 
-                    aptent taciti sociosqu. Ad litora torquent per conubia nostra 
-                    inceptos himenaeos.
-                </p>
-            </div>
-        </div>
-  </section>
-
-  <section class="dm-project" id="dm-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Dark Matter and Dark Energy Report
-                </h1>
-                <p class="intro-text">
-                    In my final year of university, I completed a brief study on the topic of dark 
-                    matter and dark energy. I was tasked with producing a 2-page piece of research 
-                    on an applied mathematics topic of my choosing – I selected the discovery of 
-                    dark matter and dark energy. I conducted extensive research of the topics, 
-                    relishing the opportunity to learn about a topic of deep personal fascination, 
-                    before completing my report (attached). I began by discussing evidence for 
-                    dark matter, talking about the work of Franz Zwicky and including equations to 
-                    support reasoning, before moving on to Vera Rubin’s study on the rotational 
-                    velocities of spiral galaxies. I then moved on to dark energy, where I covered 
-                    the Friedmann acceleration equations and Einsteins famous field equations to 
-                    contextualise the accelerating expansion of our universe – attributed to the 
-                    existence of dark energy. 
-                    <br><br>
-                    To produce this report I used LaTeX, a document preparation system in which code 
-                    is used to generate high-quality scientific documents. I used this software for 
-                    several documents including my THC dissertation and typed notes of my university 
-                    studies. 
-                </p>
-            </div>
-        </div>
-  </section>
-
-  <section class="vortex-project" id="vortex-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Vortex Motion and Dynamics
-                </h1>
-                <p class="intro-text">
-                    As part of a group project, I was tasked with producing an in-depth report on 
-                    vortex point dynamics. Whilst some of this report required notes on basic 
-                    fluids and characteristics of flows, I wanted to be able to produce useful 
-                    plots of different vortex interactions in Python. Whilst my colleagues worked 
-                    on other aspects of the report, I applied my advanced coding skills to this, 
-                    producing velocity-field diagrams of simple vortex behaviour – such as vortex 
-                    coalescence and fission. I then added greater complexity, producing plots of 
-                    N vortices, and showcasing the image method – a method used to predict vortex 
-                    behaviour when near a solid boundary. 
-                    <br><br>
-                    After the completion of this project, I wanted to push myself further and so 
-                    developed a programme to simulate vortex interactions and movements in the form 
-                    of an animation. The code takes in initial locations and circulations of N vortices, 
-                    before using the Helmholtz point-vortex equations to simulate their behaviour (including 
-                    annihilations) and their resultant paths. 
-                </p>
-            </div>
-        </div>
-  </section>
-
-  <section class="codedex-project" id="codedex-project">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    Codedex Projects
-                </h1>
-                <p class="intro-text">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-                    Quisque faucibus ex sapien vitae pellentesque sem placerat. 
-                    In id cursus mi pretium tellus duis convallis. Tempus leo 
-                    eu aenean sed diam urna tempor. Pulvinar vivamus fringilla 
-                    lacus nec metus bibendum egestas. Iaculis massa nisl malesuada 
-                    lacinia integer nunc posuere. Ut hendrerit semper vel class 
-                    aptent taciti sociosqu. Ad litora torquent per conubia nostra 
-                    inceptos himenaeos.
-                </p>
-            </div>
-        </div>
-  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Vortex Point Dynamics</h2>
+        <p>
+            ........
+        </p>
+    </div>
+  </div>
 
 </body>

@@ -24,20 +24,21 @@ body {
     }
 }
 
-/* navigation bar */
+/* default navigation bar */
 /* navbar - sticky top bar with solid color, nav links and search bar */
-.navbar {
+#navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
+    height: 100px;
     padding: 15px 30px;
-    background: teal;
+    background: #222;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
-
 .background {
     background: #222;
 }
@@ -45,36 +46,45 @@ body {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
     list-style: none;
+    font-size: 30px;
 }
-
 .nav-list li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color o.3s ease;
 }
-
 .nav-list li a:hover {
     color: lightseagreen;
     text-shadow: 1px 1px 5px black;
 }
-
 .rightnav {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 #search { 
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 20px;
     border: 2px solid #adaca7;
-    border-radius: 8px;
+    border-radius: 10px;
     outline: none;
     background: white;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
+}
+/* shrunk navbar when scrolling */
+#navbar.scrolled {
+    height: 55px;
+}
+#navbar.scrolled .nav-list {
+    transform: scale(0.80);
+    margin-left: -40px;
+}
+#navbar.scrolled #search {
+    font-size: 16px;
+    padding: 8px;
 }
 
 /* buttons (rounded buttons w backgrounds and hover animations) */
