@@ -34,6 +34,7 @@
         </div>
   </section>
 
+
   <section class="project">
     <img src="../images/cover-images/ocean.jpg" alt="THC-cover">
 
@@ -87,6 +88,34 @@
 
 
     <section class="project">
+    <img src="../images/cover-images/enceladus.jpg" alt="icy-moon-cover">
+
+    <button class="project-title">
+        Extraterrestrial Oceans
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Subsurface Oceans of Icy Moons</h2>
+        <p>
+            Once I had completed my study on Earth's oceans, I decided to apply my model 
+            to other ocean systems - looking at subsurface oceans on the icy moons of Europa 
+            and Enceladus. This is a topic of active research, and as someone with a passion 
+            for studying space I wanted to contribute my own research. By adjusting initial 
+            conditions and parameters, I was able to produce plots of the behaviour of these 
+            subsurface oceans consistent with data from NASA and models developed by the 
+            likes of Lobo and Soderund. 
+            <br><br>
+            In the future I wish to develop my model using new data from future NASA missions 
+            and extend this study to other celestial bodies. I may also look to apply my model 
+            to other studies including renewable energy (wind and wave power) and species 
+            migration.
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
     <img src="../images/cover-images/jupiter.avif" alt="orb-cover">
 
     <button class="project-title">
@@ -94,10 +123,187 @@
     </button>
   </section>
   <div class="project-info">
-    <h2>Orbital Mechanics</h2>
-    <p>
-        ............
-    </p>
+    <div class="project-text">
+        <h2>Orbital Mechanics</h2>
+        <p>
+            I have recently developed a Python programme to simulate motion of orbiting bodies. 
+            It produces plots of various orbits within our solar system using the equation:
+            <br><br>
+            The code allows a user to input a body of their choosing and produces an accurate 
+            plot of its orbit using data sourced from NASA's horizon system. I have added 
+            varying colours and orbit times for each body, but plan to add more detail in 
+            future. I want to allow a user to simulate orbits of various satellites, including 
+            an option to add a fully customised orbit. I may also add more bodies including 
+            some exoplanets and other systems outside of our solar system. My next task is to 
+            add an option to produce multiple orbits on one plot and add customisable plotting 
+            options. I may also look at implementing more detailed three-body interactions. 
+        </p>
+    </div>
+  </div>
+
+    <section class="project">
+    <img src="../images/cover-images/stocks.jpg" alt="rwbm-cover">
+
+    <button class="project-title">
+        Stock Market
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Brownian Study of Stock Behaviour</h2>
+        <p>
+            In early 2026 I decided to complete a detailed study of the stock market, an 
+            idea fuelled by my passion for finance. I wanted to begin by revising the 
+            mathematics of random walks and Brownian motion - topics I had studied at 
+            degree level - to model asset prices, before applying some financial ideologies 
+            to produce useful outputs. 
+            <br><br>
+            First, I simulated the paths of N random walks over n steps, calculating their 
+            mean and variance to be compared to results from theory. A plot of the paths 
+            over time and a histogram of their final positions are useful visualisation tools 
+            to ensure my model works smoothly. I then produced a new script to simulate 
+            Brownian motion of N paths, before validating the model by analysing outputs. 
+            Again, I produced a plot of a sample of paths, a histogram of final values, and 
+            calculations of mean and variance. Additional sanity checks included a check for 
+            independence of variables and a check of incremental mean and variance to ensure 
+            the increments satisfy Brownian motion. 
+            <br><br>
+            I then modelled asset prices using Geometric Brownian motion, a more realistic 
+            pricing model. GBM is more useful here as prices will always remain positive and 
+            changes to the price of an asset are proportional to its current price - providing 
+            more accurate risk and return assessments. For my model I built paths following 
+            GBM simulated over n time-steps. Again, the model is validated with path plots 
+            and a histogram - this time plotting the log of the final positions to allow for 
+            comparison to a standard Normal distribution. Additional validation comes through 
+            the comparison of the models mean and variance to their analytical 'expected' 
+            values.
+            <br><br>
+            Next, I looked to apply this model to some real assets such as European options. 
+            European options give the owner a right to buy or sell stock at a fixed price, 
+            however only on the expiration date of the contract. There are two main types: 
+            a put option gives an owner the right to sell at a fixed price, whilst a call 
+            option gives them the right to buy at a fixed price. The model provides suggested 
+            prices for a call and put option for a strike price, providing a confidence 
+            interval and a visual representation in the form of a histogram, with calculations 
+            computed using a Monte-Carlo pricing scheme. 
+            <br><br>
+            Finally, I wanted to produce some more meaningful investment indicators and so 
+            used the model to calculate various 'Greeks' - used to measure how the price of a 
+            derivative changes when the model inputs are changed. Here the programme provides the 
+            user with the following Greeks: Delta (sensitivity to changes in spot price), 
+            Gamma (curvature of option price w.r.t spot), Vega (sensitivity to volatility), 
+            Theta (sensitivity to time maturity) and Rho (sensitivity to risk-free interest 
+            rate). 
+            <br><br>
+            This project helped fuel my education on financial topics and modelling of prices 
+            and options - whilst producing useful tools that I can use in the future. In 
+            future I wish to develop the model's accuracy further by implementing stochastic 
+            volatility models and various path-dependent options, whilst I could also add more 
+            Greeks to further add to the user's arsenal when making investment decisions. 
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/artemis2.jpg" alt="mission-cover">
+
+    <button class="project-title">
+        NASA Mission
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Analysis of NASA Mission Data</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+    <section class="project">
+    <img src="../images/cover-images/weather.jpg" alt="weather-app-cover">
+
+    <button class="project-title">
+        Weather App
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Weather App</h2>
+        <p>
+            Last year I was approached with an issue faced by a UK water company - they had 
+            several remote sites, many of which provided inaccurate or limited weather data. 
+            This is damaging to the company as they need accurate weather predictions whenever 
+            they wish to conduct work or training sessions on site. They need data to help 
+            decide when to complete repairs such as cement laying and work on underground 
+            cables/pipes, and since they regularly host training exercises for military and 
+            police teams' accurate data is crucial. A resolution could save a lot of money for 
+            the water company and their collaborators. 
+            <br><br>
+            As a solution, I came up with the idea to build them a website which takes data from 
+            multiple sources and compiles it to produce an accurate catalogue of past weather data. 
+            Using this I was able to produce more reliable data for up to 20 years in the past in 
+            some postcodes. The app is easy to use and requires a user to simply input a UK postcode 
+            to produce an output. The output is visualised in four tabs, the first two showing data 
+            for variables such as temperature and precipitation in the form of charts and tables. The 
+            third tab contains plots showing the change in monthly averages across the years for which 
+            data is available, allowing a user to look at specific months and variables individually. 
+            The final tab provides a prediction for the future. This data is produced using a machine 
+            learning model, which takes past data and generates a prediction and error range for weather 
+            patterns in the future. 
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/atm.jpg" alt="atm-cover">
+
+    <button class="project-title">
+        Atmospheric Circulation
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Study of Various Planetary Atmospheres</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/dm.jpg.webp" alt="dm-cover">
+
+    <button class="project-title">
+        Dark Matter and Dark Energy
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Study into the Origins of Dark Matter and Dark Energy</h2>
+        <p>
+            In my final year of university, I completed a brief study on the topic of dark 
+            matter and dark energy. I was tasked with producing a 2-page piece of research 
+            on an applied mathematics topic of my choosing - I selected the discovery of 
+            dark matter and dark energy. I conducted extensive research of the topics, 
+            relishing the opportunity to learn about a topic of deep personal fascination, 
+            before completing my report (attached). I began by discussing evidence for dark 
+            matter, talking about the work of Franz Zwicky and including equations to support 
+            reasoning, before moving on to Vera Rubin's study on the rotational velocities 
+            of spiral galaxies. I then moved on to dark energy, where I covered the Friedmann 
+            acceleration equations and Einsteins famous field equations to contextualise the 
+            accelerating expansion of our universe - attributed to the existence of dark 
+            energy. 
+            <br><br>
+            To produce this report I used LaTeX, a document preparation system in which code 
+            is used to generate high-quality scientific documents. I used this software for 
+            several documents including my THC dissertation and typed notes of my university 
+            studies. 
+        </p>
+    </div>
   </div>
 
 
@@ -112,9 +318,101 @@
     <div class="project-text">
         <h2>Vortex Point Dynamics</h2>
         <p>
-            ........
+            As part of a group project, I was tasked with producing an in-depth report on 
+            vortex point dynamics. Whilst some of this report required notes on basic fluids 
+            and characteristics of flows, I wanted to be able to produce useful plots of different 
+            vortex interactions in Python. Whilst my colleagues worked on other aspects of the 
+            report, I applied my advanced coding skills to this, producing velocity-field diagrams 
+            of simple vortex behaviour - such as vortex coalescence and fission. I then added greater 
+            complexity, producing plots of N vortices, and showcasing the image method - a method used
+            to predict vortex behaviour when near a solid boundary. 
+            <br><br>
+            After the completion of this project, I wanted to push myself further and so developed a 
+            programme to simulate vortex interactions and movements in the form of an animation. The code 
+            takes in initial locations and circulations of N vortices, before using the Helmholtz point-vortex 
+            equations to simulate their behaviour (including annihilations) and their resultant paths. 
         </p>
     </div>
   </div>
 
+
+    <section class="project">
+    <img src="../images/cover-images/web-design.jpg" alt="portfolio-cover">
+
+    <button class="project-title">
+        Portfolio
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Personal Web Portfolio</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/flappy.jpg" alt="coding-projects-cover">
+
+    <button class="project-title">
+        Additional Projects
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Extra Coding Projects</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/bar-chart.png" alt="data-cover">
+
+    <button class="project-title">
+        Data Analysis
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>Additional Data Analysis Studies</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+
+    <section class="project">
+    <img src="../images/cover-images/code.jpg" alt="coding-cover">
+
+    <button class="project-title">
+        Coding Skills
+    </button>
+  </section>
+  <div class="project-info">
+    <div class="project-text">
+        <h2>General Coding Skills</h2>
+        <p>
+            ............
+        </p>
+    </div>
+  </div>
+
+
+
+    <!-- simple footer ft. contact details -->
+    <footer class="background">
+        <p class="text-footer">
+            email | number | git
+            <!-- ADD LINK FOR EMAIL AND GH -->
+        </p>
+    </footer>
+
+
 </body>
+
