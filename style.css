@@ -240,7 +240,7 @@ body {
     width: 100%;
     height: auto;
     max-width: 2000px;
-    max-height: 750px;
+    max-height: 700px;
     border-radius: 15px;
 }
 /* title card (may remove) */
@@ -300,20 +300,19 @@ body {
 .current-project {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 120px 40px;
-
+  padding: 50px 40px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
+  gap: 50px;
   align-items: center;
   background-color: #a1c4fd;
 }
 /* image of plots */
 .current-project-image {
   width: 100%;
-  aspect-ratio: 14 / 10;
+  aspect-ratio: 18 / 10;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .current-project-image img {
   width: 100%;
