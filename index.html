@@ -8,150 +8,156 @@
   <script src="script.js" defer></script>
 </head>
 
-<body>
-  <nav id="navbar">
-    <!-- add links to other pages in site navigation bar -->
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="html/about.html">About Me</a></li>
-      <li><a href="html/projects.html">Projects</a></li>
-    </ul>
-    <!-- search bar (MAY REMOVE) -->
-    <div class="rightnav">
-      <input type="text" name="search" id="search">
-      <button class="btn btn-sm">Search</button>
-    </div>
-  </nav>
+    <body>
+    <nav id="navbar">
+        <!-- add links to other pages in site navigation bar -->
+        <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/about.html">About Me</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+        </ul>
+        <!-- search bar (MAY REMOVE) -->
+        <div class="rightnav">
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
 
-  <!-- first y block featuring a large box w name -->
-  <section class="firstsection" id="web">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">Josef Carrington
-                </h1>
+    <main class="main-content">
+        <!-- first y block featuring a large box w name -->
+        <section class="firstsection" id="web">
+                <div class="box-main">
+                    <div class="firstHalf">
+                        <h1 class="text-big">Josef Carrington
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- second y block featuring a short intro -->
+            <section class="secondsection" id="summary">
+                <div class="box-main">
+                    <div class="firstHalf">
+                        <h1 class="text-big">
+                            About Me
+                        </h1>
+                        <p class="intro-text">
+                            I'm a mathematics graduate interested in data analysis, 
+                            programming and scientific computing. I enjoy turning complex 
+                            ideas into practical, interactive projects.
+                        </p>
+                    </div>
+                    <!-- FIND OUT MORE link -->
+                </div>
+            </section>
+
+            <!-- third y block contains a gallery of my projects -->
+            <section class="home-gallery" aria-label="Featured projects">
+            <div class="gallery-track">
+
+                <!-- change images for each project ?????? -->
+                <a href="html/projects.html#project-1" class="gallery-slide">
+                    <img src="images/cover-images/ocean.jpg" alt="Project 1">
+                    <span class="gallery-title">
+                        Oceanic Circulation
+                    </span>
+                </a>
+                <a href="html/projects.html#project-2" class="gallery-slide">
+                    <img src="images/cover-images/stocks.jpg" alt="Project 2">
+                    <span class="gallery-title">
+                        Stock Market
+                    </span>
+                </a>
+                <a href="html/projects.html#project-3" class="gallery-slide">
+                    <img src="images/cover-images/artemis.jpg" alt="Project 3">
+                    <span class="gallery-title">
+                        NASA Mission
+                    </span>
+                </a>
+                <a href="html/projects.html#project-4" class="gallery-slide">
+                    <img src="images/cover-images/atm.jpg" alt="Project 4">
+                    <span class="gallery-title">
+                        Additional Projects
+                    </span>
+                </a>
+
             </div>
-        </div>
-    </section>
+            <!-- buttons to scroll through gallery -->
+            <button class="gallery-button gallery-prev" aria-label="Previous project">
+                &#10094;
+            </button>
+            <button class="gallery-button gallery-next" aria-label="Next project">
+                &#10095;
+            </button>
 
-    <!-- second y block featuring a short intro -->
-    <section class="secondsection" id="summary">
-        <div class="box-main">
-            <div class="firstHalf">
-                <h1 class="text-big">
-                    About Me
-                </h1>
-                <p class="intro-text">
-                    I'm a mathematics graduate interested in data analysis, 
-                    programming and scientific computing. I enjoy turning complex 
-                    ideas into practical, interactive projects.
-                </p>
+            </section>
+
+
+            <!-- fourth y-block with my current project -->
+            <section class="current-project">
+            <div class="current-project-image">
+                <img src="images/project-images/circulation.png" alt="Project preview">
             </div>
-            <!-- FIND OUT MORE link -->
-        </div>
-    </section>
-
-    <!-- third y block contains a gallery of my projects -->
-    <section class="home-gallery" aria-label="Featured projects">
-    <div class="gallery-track">
-
-        <!-- change images for each project ?????? -->
-        <a href="html/projects.html#project-1" class="gallery-slide">
-            <img src="images/cover-images/ocean.jpg" alt="Project 1">
-            <span class="gallery-title">
-                Oceanic Circulation
-            </span>
-        </a>
-        <a href="html/projects.html#project-2" class="gallery-slide">
-            <img src="images/cover-images/stocks.jpg" alt="Project 2">
-            <span class="gallery-title">
-                Stock Market
-            </span>
-        </a>
-        <a href="html/projects.html#project-3" class="gallery-slide">
-            <img src="images/cover-images/artemis.jpg" alt="Project 3">
-            <span class="gallery-title">
-                NASA Mission
-            </span>
-        </a>
-        <a href="html/projects.html#project-4" class="gallery-slide">
-            <img src="images/cover-images/atm.jpg" alt="Project 4">
-            <span class="gallery-title">
-                Additional Projects
-            </span>
-        </a>
-
-    </div>
-    <!-- buttons to scroll through gallery -->
-    <button class="gallery-button gallery-prev" aria-label="Previous project">
-        &#10094;
-    </button>
-    <button class="gallery-button gallery-next" aria-label="Next project">
-        &#10095;
-    </button>
-
-    </section>
-
-
-    <!-- fourth y-block with my current project -->
-    <section class="current-project">
-      <div class="current-project-image">
-          <img src="images/project-images/circulation.png" alt="Project preview">
-      </div>
-      <div class="current-project-info">
-        <p class="section-label">CURRENT PROJECT</p>
-        <h2>Thermohaline Circulation</h2>
-        <div class="project-tabs">
-          <button class="tab active" data-tab="overview">Overview</button>
-          <button class="tab" data-tab="process">Process</button>
-          <button class="tab" data-tab="tech">Tech</button>
-        </div>
-        <div class="project-content">
-          <div class="content-panel active" id="overview">
-            <p>
-                I'm currently ...
-            </p>
-            <p>
-                The focus is on ...
-            </p>
-          </div>
-          <div class="content-panel" id="process">
-            <p>
-                I started by ...
-            </p>
-            <p>
-                I'm currently working on ...
-            </p>
-          </div>
-          <div class="content-panel" id="tech">
-            <p>
-                The project is being built using:
-            </p>
-            <ul>
-                <li>Python</li>
-                <li>Excel</li>
-            </ul>
-            <p>
-                I'm also experimenting with ...
-            </p>
-          </div>
-        </div>
-        <div class="project-links">
-            <a href="html/projects.html#project-1" class="project-button">View Project →</a>
-            <!-- ADD github link -->
-        </div>
-      </div>
-    </section>
-
+            <div class="current-project-info">
+                <p class="section-label">CURRENT PROJECT</p>
+                <h2>Thermohaline Circulation</h2>
+                <div class="project-tabs">
+                <button class="tab active" data-tab="overview">Overview</button>
+                <button class="tab" data-tab="process">Process</button>
+                <button class="tab" data-tab="tech">Tech</button>
+                </div>
+                <div class="project-content">
+                <div class="content-panel active" id="overview">
+                    <p>
+                        I'm currently ...
+                    </p>
+                    <p>
+                        The focus is on ...
+                    </p>
+                </div>
+                <div class="content-panel" id="process">
+                    <p>
+                        I started by ...
+                    </p>
+                    <p>
+                        I'm currently working on ...
+                    </p>
+                </div>
+                <div class="content-panel" id="tech">
+                    <p>
+                        The project is being built using:
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Excel</li>
+                    </ul>
+                    <p>
+                        I'm also experimenting with ...
+                    </p>
+                </div>
+                </div>
+                <div class="project-links">
+                    <a href="html/projects.html#project-1" class="project-button">View Project →</a>
+                    <!-- ADD github link -->
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- simple footer ft. contact details -->
-    <footer class="background">
-        <p class="text-footer">
-            Interested in working together
-            or want to know more?
-            <br><br>
-            email | linkedin | git
-            <!-- ADD LINK FOR EMAIL AND GH -->
-        </p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-label">GET IN TOUCH</p>
+            <p class="text-footer">
+                Interested in working together
+                or want to know more?
+            </p>
+            <div class="footer-links">
+                <a href="mailto:cam.372@outlook.com">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
     </footer>
 
 </body>
