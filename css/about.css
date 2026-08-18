@@ -8,11 +8,20 @@
     background: lightskyblue;
 }
 .first-section {
-    height: 800px;
+    height: 1200px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: fadeIn 1s ease-in;
     background: #b4d3de;
+}
+.second-section {
+    height: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #8fc7db;
 }
