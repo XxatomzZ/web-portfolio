@@ -49,7 +49,7 @@
     padding: 0 50px;
 }
 .project-info.open {
-    max-height: 1200px;
+    max-height: 2000px;
     padding: 50px;
 }
 .project-text {
@@ -61,6 +61,11 @@
 .project-text p {
     font-size: 1.2rem;
     line-height: 1.6;
+}
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .project-image {
     flex: 1;

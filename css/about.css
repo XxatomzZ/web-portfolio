@@ -7,7 +7,59 @@
     animation: fadeIn 1s ease-in;
     background: lightskyblue;
 }
-.first-section {
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.summary {
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+.skills {
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #8fc7db;
+}
+.uni {
+    height: 2500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #b4d3de;
+}
+.experience {
+    height: 1200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: #8fc7db;
+}
+.hobbies {
     height: 1200px;
     color: white;
     display: flex;
@@ -16,8 +68,8 @@
     animation: fadeIn 1s ease-in;
     background: #b4d3de;
 }
-.second-section {
-    height: 800px;
+.future {
+    height: 1200px;
     color: white;
     display: flex;
     align-items: center;
