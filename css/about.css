@@ -7,24 +7,52 @@
     animation: fadeIn 1s ease-in;
     background: lightskyblue;
 }
+.ab-section-1-box-main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ab-section-1 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.ab-box-main {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
 .about-images {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
 }
 .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 .about-image img {
+    display: block;
     width: 100%;
     max-width: 500px;
     border-radius: 15px;
     object-fit: cover;
 }
+.grad-image {
+    width: 100%;
+}
+.grad-image img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
 .summary {
-    height: 400px;
+    height: 500px;
     color: white;
     display: flex;
     align-items: center;
@@ -41,6 +69,12 @@
     animation: fadeIn 1s ease-in;
     background: #8fc7db;
 }
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
 .uni {
     height: 2500px;
     color: white;
@@ -51,7 +85,7 @@
     background: #b4d3de;
 }
 .experience {
-    height: 1200px;
+    height: 800px;
     color: white;
     display: flex;
     align-items: center;
@@ -60,7 +94,7 @@
     background: #8fc7db;
 }
 .hobbies {
-    height: 1200px;
+    height: 1100px;
     color: white;
     display: flex;
     align-items: center;
@@ -69,11 +103,43 @@
     background: #b4d3de;
 }
 .future {
-    height: 1200px;
+    height: 1400px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: fadeIn 1s ease-in;
     background: #8fc7db;
+}
+.skills .firstHalf,
+.experience .firstHalf,
+.future .firstHalf {
+    order: 2;
+    grid-column: 2;
+}
+.skills .about-images,
+.experience .about-images,
+.future .about-images {
+    order: 1;
+}
+
+@media (max-width: 800px) {
+
+    .box-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .about-images {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
 }
