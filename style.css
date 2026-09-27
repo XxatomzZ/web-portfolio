@@ -63,20 +63,7 @@ body {
     color: lightseagreen;
     text-shadow: 1px 1px 5px black;
 }
-.rightnav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-#search { 
-    padding: 10px;
-    font-size: 20px;
-    border: 2px solid #adaca7;
-    border-radius: 10px;
-    outline: none;
-    background: white;
-    transition: 0.5s ease;
-}
+
 /* shrunk navbar when scrolling */
 #navbar.scrolled {
     height: 55px;
@@ -108,10 +95,6 @@ body {
     transform: scale(1.05);
 }
 
-.btn-sm {
-    padding: 8px 16px;
-    font-size: 14px;
-}
 
 /* sections */
 /* general section styles */

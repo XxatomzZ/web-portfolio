@@ -17,11 +17,6 @@
       <li><a href="../html/about.html">About Me</a></li>
       <li><a href="../html/projects.html">Projects</a></li>
     </ul>
-    <!-- search bar (MAY REMOVE) -->
-    <div class="rightnav">
-      <input type="text" name="search" id="search">
-      <button class="btn btn-sm">Search</button>
-    </div>
   </nav>
 
   <main class="main-content">
@@ -163,14 +158,21 @@
               I have recently developed a Python programme to simulate motion of orbiting bodies. 
               It produces plots of various orbits within our solar system using the equation:
               <br><br>
+              x = x^2 + a
+              <br><br>
               The code allows a user to input a body of their choosing and produces an accurate 
-              plot of its orbit using data sourced from NASA's horizon system. I have added 
-              varying colours and orbit times for each body, but plan to add more detail in 
+              plot of its orbit using initial data sourced from NASA's horizon system. The user 
+              also has an option to map the orbits of all planets (and Pluto) on one plot, 
+              allowing for comparison. The orbits are created using initial values sourced from the 
+              horizon's system, before incrementally time-stepping over the full length of the orbit, 
+              with the position at each time calculated using the equation above. The only initial 
+              values required are an initial position vector (x, y, z) and an initial velocity vector 
+              (u, v, w), whilst I also input an orbit time to allow for faster simulations. I have 
+              added varying colours and orbit times for each body, but plan to add more detail in 
               future. I want to allow a user to simulate orbits of various satellites, including 
-              an option to add a fully customised orbit. I may also add more bodies including 
-              some exoplanets and other systems outside of our solar system. My next task is to 
-              add an option to produce multiple orbits on one plot and add customisable plotting 
-              options. I may also look at implementing more detailed three-body interactions. 
+              an option to add a fully customised orbit. I may also add more bodies including some 
+              exoplanets and other systems outside of our solar system. I may also look at implementing 
+              more detailed three-body interactions. 
           </p>
       </div>
       <div class="project-images">
@@ -266,13 +268,26 @@
       <div class="project-text">
           <h2>Analysis of NASA Mission Data</h2>
           <p>
-              As I looked to develop my data analysis skills, I conducted an extensive 
-              study of large datasets produced by NASA missions. I sourced the data from 
-              NASA's own database archive and cleaned it using excel and Python. I could 
-              then begin to study the various datasets. 
+              As I looked to develop my data analysis skills, I began an extensive study of large 
+              datasets produced by NASA missions. I sourced the data from NASA's own database archive 
+              and cleaned it using excel and Python before studying the datasets and drawing my own 
+              insights. 
               <br><br>
-              The first dataset I looked at was ...
+              The first dataset I looked at was from the Cassini-Huygens mission. I wanted to go more 
+              in depth on some of the data from Enceladus, specifically the plumes which contained 
+              information about the subsurface ocean I studied in my icy moons project. I began by 
+              downloading a set of large, complex datasets directly from NASA, and cleaned and combined 
+              these into one dataset, containing only the information that I was interested in. My next 
+              step is to study these datasets and produce some meaningful insights using Python.
             </p>
+      </div>
+      <div class="project-images">
+        <div class="project-image">
+            <img src="../images/project-images/nasa-mission/cassini.jpg" alt="Cassini Probe Flying by Saturn">
+        </div>
+        <div class="project-image">
+            <img src="../images/project-images/nasa-mission/enceladus-plumes.jpg" alt="Plumes and Structure of Enceladus">
+        </div>
       </div>
     </div>
 
@@ -306,7 +321,15 @@
               data is available, allowing a user to look at specific months and variables individually. 
               The final tab provides a prediction for the future. This data is produced using a machine 
               learning model, which takes past data and generates a prediction and error range for weather 
-              patterns in the future. 
+              patterns in the future. Users can select a range of years for the past data, all the way 
+              back to 2005. They can also select any of the available variables to plot the monthly average 
+              each year of, allowing for trends (like increasing temperatures each year) to be easily spotted. 
+              A user can also adjust plotting characteristics - showing trend lines or error bars - for all 
+              plots. They can also extend the forecast produced by the machine learning algorithm from 1 
+              to 24 months in the future, and for longer forecasts you can clearly see how quickly the 
+              uncertainty can grow. After running an analysis, users can download plots and data tables for 
+              their own use, crucial for a company trying to justify when they could complete work and 
+              training sessions on their sites. 
           </p>
       </div>
       <div class="project-images">
@@ -341,9 +364,26 @@
               hope to study why Earth's atmosphere is ideal for life, and what we should be 
               looking for when searching for planets that may contain or sustain life.  
               <br><br>
+              Much of the data I am using is sourced from NASA, and after a lengthy cleaning 
+              process I began to conduct my analyses. So far, I have only studied planets in 
+              our solar system, and I have plots of things like density, composition, and 
+              depth. I have also begun implementing my oceanic circulation to try and model 
+              atmosphere flow, where I hope to produce snapshots of the temperatures, pressures, 
+              and direction of circulation. I want to add data on some key exoplanets, to allow 
+              for comparison between our solar system and crucially Earth's atmosphere, where 
+              I can discuss potential for living organisms and optimal conditions for life. 
+              <br><br>
               In future I hope to implement this as part of my own exoplanet app - containing 
               interactive details of a large database of known exoplanets. 
           </p>
+      </div>
+      <div class="project-images">
+        <div class="project-image">
+            <img src="../images/project-images/atm-circulation/saturn-atm.jpg" alt="Atmosphere of Saturn">
+        </div>
+        <div class="project-image">
+            <img src="../images/project-images/atm-circulation/atm-placeholder.png" alt="Diagram of Jupiter's Atmosphere">
+        </div>
       </div>
     </div>
 
@@ -378,6 +418,11 @@
               studies. 
           </p>
       </div>
+      <div class="project-images">
+        <div class="project-image">
+            <img src="../images/project-images/dark-matter/dm-rings.jpg" alt="Ring of Dark Matter Observed by Hubble">
+        </div>
+      </div>
     </div>
 
 
@@ -404,7 +449,15 @@
               After the completion of this project, I wanted to push myself further and so developed a 
               programme to simulate vortex interactions and movements in the form of an animation. The code 
               takes in initial locations and circulations of N vortices, before using the Helmholtz point-vortex 
-              equations to simulate their behaviour (including annihilations) and their resultant paths. 
+              equations to simulate their behaviour (including annihilations) and their resultant paths. The 
+              result is then output in the form of an mp3 file, showing the movement of the vortices and 
+              their behaviour. This is a useful indicator of vortex interactions and can be useful for 
+              simple problems whilst also being scalable to more complex fluid problems. 
+              <br><br>
+              Next, I plan to write a similar program using the Gross-Pitaevskii equation, allowing me to 
+              accurately simulate the behaviour of more complex quantum vortex problems. This will be useful 
+              for some of my other projects, such as my atmospheric model or further studies into dark matter, 
+              as these contain some quantum fluids problems. 
           </p>
       </div>
       <div class="project-images">
@@ -437,6 +490,27 @@
               using a navigation bar. All these elements were styled using CSS, giving my site a 
               clean look. I completed the project by typing up content - discussing my projects and 
               skillsets - adding images, links and interactive PDF files to showcase my work. 
+              <br><br>
+              Once I had the structure of my site perfected, I began to work in JavaScript to give my 
+              site a more professional feel. I began by creating a simple interactive navigation 
+              bar, which resizes as the user scrolls. I added a current project section to my 
+              homepage, with tabs showing content and a changing image to match each tab. I 
+              wanted to elevate my projects page, and so I came up with the idea of using a 
+              cover image to highlight the project, before allowing a user to click on the 
+              project to reveal more information. This was all done in JavaScript, and whilst 
+              working on this I added a few more projects. The text being hidden until clicked 
+              allowed me to add more content without the overall view of the page being affected, 
+              and so I could add more images of my projects and go into more detail. I expanded 
+              this idea to highlight four key projects on my homepage, using an image slideshow 
+              which redirects to each project. Finally, I made my contact details stand out with 
+              a reactive footer, which appears behind the page content as the user scrolls to the 
+              bottom. 
+              <br><br>
+              After applying the finishing touches, writing up the rest of my content, 
+              and including all my images, the project was complete. However, I can easily add 
+              additional projects and update any information and images when required, and I 
+              will be regularly updating my site - in particular my current project on 
+              atmospheric circulation. 
           </p>
       </div>
     </div>
@@ -485,6 +559,14 @@
               some more complex aspects. 
           </p>
       </div>
+      <div class="project-images">
+        <div class="project-image">
+            <img src="../images/project-images/additional-projects/quartic.jpg" alt="Example Quartic Plot">
+        </div>
+        <div class="project-image">
+            <img src="../images/project-images/additional-projects/poke-game.png" alt="Pokemon Battle Screen">
+        </div>
+      </div>
     </div>
 
 
@@ -512,13 +594,50 @@
               Much of my data analysis work is done in Python, and so the first 
               large dataset I tackled was on UK house prices. Using skills picked up 
               from my statistics modules at university, I studied linear regression of 
-              prices and size. After visualising my dataset, I conducted the analysis 
-              and generated predictions for house prices. Next, I used Kaggle (LINK????????) 
-              to source Spotify streaming data, NBA player and team stats, and Premier 
-              League team stats - which I then conducted detailed analysis on. 
+              prices and size. After cleaning my dataset, I produced some simple plots 
+              to visualising my data. Once I had an idea of how the raw data was 
+              distributes, I used a linear regression model to generate predictions 
+              for house prices based on their size. Although this is a simple model, 
+              it works as a guide for realistic prices. Of course, house prices are 
+              determined by much more than the floor area, and so additional parameters 
+              could be added from other datasets to provide a more accurate representation 
+              - or this model could be used as a guide to set a baseline price, which is 
+              then adjusted using another model to account for things like location, 
+              utilities, garden, etc.
               <br><br>
-              I hope to build a model to simulate predictions for NBA and Premier League 
-              seasons and investigate how accurate I can make my model. 
+              Next, I wanted to conduct some analysis on my favourite sports, as I had 
+              found some interesting datasets on Kaggle (LINK???????), containing data on 
+              all-time NBA teams and players, and Premier League players in the 2026/27
+              season. I began with the latter, as it was a smaller dataset and would help 
+              to develop my skills before tackling the more detailed NBA dataset. I used 
+              Excel for this analysis, and after importing my data I set about cleaning 
+              and restructuring my dataset. I wanted to compare players by position, and 
+              so I created smaller datasets for forwards, midfielders, defenders, and 
+              goalkeepers. For each of these subsets, I decided on a set of key metrics 
+              which I would use to compare players (for example I would compare goals 
+              amongst forwards, but not amongst goalkeepers). I used these parameters 
+              to find some of the star performers from each position during the season. 
+              When looking at midfielders, I selected the four standout players and went 
+              in depth to try and establish who was the top performing midfielder, comparing 
+              different traits and styles of play. I also looked at outliers - any players 
+              who vastly overperformed or underperformed based on their previous levels - 
+              and theorised the possible reasons behind this change. I realised that my 
+              groupings (defenders, midfielders, forwards) were too broad. For example, a 
+              striker and a winger or a centre back and full back play very different roles 
+              in a team. This led to me studying the top performers for each role - not 
+              just position - allowing me to have a more accurate idea of players strengths 
+              and weaknesses in various roles and allowing me to see what makes a player 
+              'strong' in each position - showing that some players could thrive in 
+              alternative roles. This in-depth analysis not only strengthened my 
+              understanding of the sport I love, but more importantly gave me confidence 
+              handling large datasets in Excel and generating meaningful insights. I am 
+              currently working on the NBA dataset, cleaning the data and deciding what 
+              metrics I want to study. I am going to conduct this data analysis using both 
+              Excel and Python, and hope to gain some valuable insight.
+              <br><br>
+              Next, I want to study Spotify data, as I have found an interesting dataset on 
+              streaming data. I also hope to build a model to simulate predictions for NBA 
+              and Premier League seasons and investigate how accurate I can make my model. 
           </p>
       </div>
       <div class="project-images">
@@ -552,10 +671,13 @@
               I have completed a number of courses to develop my coding skills, both online 
               and in person. 
               <br><br>
-              First, I completed some beginner courses on Codedex, where I developed a foundation 
+              I completed some beginner courses on Codedex, where I developed a foundation 
               in Python, SQL, and HTML/CSS/JavaScript. Their Python courses taught me about 
               loops, data structures, functional programming and testing, whilst I also completed 
-              tutorials on the NumPy, Pandas and MatPlotLib packages. I learnt to manage and 
+              tutorials on the NumPy, Pandas and MatPlotLib packages. Using these, I was able to 
+              build simple models, solve complex calculations, and plot various functions. I 
+              learnt how to produce quiver plots and surface plots, which proved valuable in my 
+              later work. I learnt to manage and 
               analyse databases in SQL and learnt the basics of web development with HTML/CSS/JS. 
               Once I had this foundation, I could work on some of the projects mentioned above. I 
               have recently begun to study their courses on C++ and C# to diversify my skillset. 
@@ -567,7 +689,9 @@
               end of this module, I completed a report on a music dataset, where I used my statistical 
               knowledge to use R to draw conclusions about this dataset. The final module I took was 
               a Python module - which gave me my first look at the software and sparked my interest in 
-              learning more. I also used Python for my group project on vortices and worked closely with 
+              learning more. Here, I learnt to solve complex problems involving quadratics and higher 
+              order functions. I studied root finding using various methods, and generated complex quiver 
+              plots for ODEs.  I also used Python for my group project on vortices and worked closely with 
               my supervisor to learn how to generate vector plots and accurate simulations - whilst I 
               primarily used Python for my dissertation on oceanic circulation. 
               <br><br>
@@ -580,6 +704,11 @@
               exercises on algorithms and logic, machine learning and financial probability, whilst also 
               revising some general coding skills. The actual assessment contained questions testing 
               loops, counting, and string construction. 
+              <br><br>
+              I recently completed an independent course using R, as I wanted to push my statistical analyses 
+              to a higher level. Here I learnt how to produce box plots, and detailed scatter diagrams. This 
+              led to a large project at the end of the course, where I worked with a dataset from the 2018 
+              FIFA World Cup, combining my skills to study the data and produce detailed plots for a report. 
               <br><br>
               I now feel confident using whatever coding language is most effective for a project, and I feel 
               I can work independently on whatever projects I want to study in the future. I hope to 
